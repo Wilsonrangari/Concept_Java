@@ -1,11 +1,11 @@
 package com.wilson.inhertiance;
 
 public class Watch {
-	int hour;
-	int minute;
-	int second;
+	public int hour;
+	public int minute;
+	public int second;
 	
-	Watch(){
+	public Watch(){
 		System.out.println("Watch 0 constructor");
 		
 	}
@@ -17,7 +17,7 @@ public class Watch {
 		
 	}
 	
-	void displayTime() {
+	public void displayTime() {
 	System.out.println("The current time is "+hour+"."+minute+"."+second);
 	}
 	

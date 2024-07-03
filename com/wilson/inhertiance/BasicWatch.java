@@ -1,11 +1,11 @@
 package com.wilson.inhertiance;
 
 public class BasicWatch extends Watch {
-	int date;
-	int month;
-	int year;
+	public int date;
+	public int month;
+	public int year;
 	
-	BasicWatch(){
+	public BasicWatch(){
 		System.out.println("Basic watch 0 constructor");
 		
 	}
@@ -17,7 +17,7 @@ public class BasicWatch extends Watch {
 		
 	}
 	
-	void displayDate() {
+	public void displayDate() {
 	System.out.println("The current date is "+date +"-"+month+"-"+year);
 	}
 	
