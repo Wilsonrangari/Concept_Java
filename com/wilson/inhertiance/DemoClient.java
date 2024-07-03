@@ -4,13 +4,13 @@ public class DemoClient {
 
 	public static void main(String[] args) {
 		
-//		BasicWatch wt = new BasicWatch();
+		BasicWatch wt = new BasicWatch();
 		
-		Watch wt = new Watch();
-//		wt.setDate(7, 3, 2024);
-//		wt.displayDate();
+//		Watch wt = new Watch();
+		wt.setDate(7, 3, 2024);
+		wt.displayDate();
 		
-		
+	
 		  System.out.println("-----------------"); 
 		  wt.setTime(13, 05, 36);
 		  

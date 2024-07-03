@@ -1,23 +1,23 @@
 package com.wilson.inhertiance;
 
 public class Watch {
-	public int hour;
-	public int minute;
-	public int second;
+	protected int hour;
+	protected int minute;
+	protected int second;
 	
-	public Watch(){
+	protected Watch(){
 		System.out.println("Watch 0 constructor");
 		
 	}
 	
-	public void setTime(int hour, int minute, int second) {
+	protected void setTime(int hour, int minute, int second) {
 		this.hour = hour;
 		this.minute = minute;
 		this.second = second;
 		
 	}
 	
-	public void displayTime() {
+	protected void displayTime() {
 	System.out.println("The current time is "+hour+"."+minute+"."+second);
 	}
 	
