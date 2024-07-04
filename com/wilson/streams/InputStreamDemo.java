@@ -20,8 +20,8 @@ public class InputStreamDemo {
 			 * }
 			 */
 			byte[] allBytes = fis.readAllBytes();
-			String newString = new String(allBytes);
-			System.out.println(newString);
+			String fileContent = new String(allBytes);
+			System.out.println(fileContent);
 			
 			
 		} catch (FileNotFoundException e) {
