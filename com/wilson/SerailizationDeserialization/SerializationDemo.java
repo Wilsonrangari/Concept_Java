@@ -8,15 +8,17 @@ import java.io.ObjectOutputStream;
 public class SerializationDemo {
 
 	public static void main(String[] args) {
-		
-		try {
-			FileOutputStream fos = new FileOutputStream("/employee.ser");
-			
-			ObjectOutputStream oos = new ObjectOutputStream(fos);
-			
-			
-			
-			
+
+		try (FileOutputStream fos = new FileOutputStream("./employee.ser");
+			 ObjectOutputStream oos = new ObjectOutputStream(fos);) {
+
+			oos.writeObject(new Employee(1, "Wilson"));
+			oos.writeObject(new Employee(2, "Ruchira"));
+			oos.writeObject(new Employee(3, "Rohit"));
+
+			oos.flush();
+			System.out.println("Serialization is done ");
+
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
