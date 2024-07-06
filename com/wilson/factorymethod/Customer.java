@@ -1,6 +1,6 @@
 package com.wilson.factorymethod;
 
-public class Customer {
+public class Customer implements Cloneable{
 	
 	private static Customer instance;
 	
@@ -14,6 +14,11 @@ public class Customer {
 		}
 		return instance;
 		
+	}
+	
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		return super.clone();
 	}
 
 }
