@@ -25,8 +25,11 @@ public class CompraratorDemo {
 //				Collections.sort(nameList, (cust1, cust2) -> cust1.getCustomerId() - cust2.getCustomerId());
 //				System.out.println("Sorting base on customer id "+nameList);
 		
-				Collections.sort(nameList, (cust1, cust2) -> cust1.getCustomerName().compareTo(cust2.getCustomerName()));
-				System.out.println("Sorting based on customer name "+nameList);
+//				Collections.sort(nameList, (cust1, cust2) -> cust1.getCustomerName().compareTo(cust2.getCustomerName()));
+//				System.out.println("Sorting based on customer name "+nameList);
+				
+				Collections.sort(nameList, (cust1, cust2) -> -cust1.getCustomerName().compareTo(cust2.getCustomerName()));
+				System.out.println("Sorting based on customer name using minus sign descending "+nameList);
 		
 
 	}
