@@ -18,8 +18,15 @@ public class CompraratorDemo {
 				new Customer(89, "Rekha")
 				);
 		
-		Collections.sort(nameList);
-		System.out.println(nameList);
+				/*
+				 * Collections.sort(nameList); System.out.println(nameList);
+				 */
+		
+//				Collections.sort(nameList, (cust1, cust2) -> cust1.getCustomerId() - cust2.getCustomerId());
+//				System.out.println("Sorting base on customer id "+nameList);
+		
+				Collections.sort(nameList, (cust1, cust2) -> cust1.getCustomerName().compareTo(cust2.getCustomerName()));
+				System.out.println("Sorting based on customer name "+nameList);
 		
 
 	}

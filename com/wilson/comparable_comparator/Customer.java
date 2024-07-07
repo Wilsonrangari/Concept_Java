@@ -29,11 +29,11 @@ public class Customer implements Comparable<Customer>{
 	public String toString() {
 		return "Customer [customerId=" + customerId + ", customerName=" + customerName + "]";
 	}
-	@Override
-	public int compareTo(Customer cust) {
-		
-		return this.customerName.compareTo(cust.getCustomerName());
-	}
+	/*
+	 * @Override public int compareTo(Customer cust) {
+	 * 
+	 * return this.customerName.compareTo(cust.getCustomerName()); }
+	 */
 	
 	
 	
