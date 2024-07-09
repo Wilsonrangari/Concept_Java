@@ -18,6 +18,7 @@ public class ThreadDemo {
 		
 		
 		System.out.println("Current Thread name is "+currThread);
+		System.out.println("Need to learn");
 		
 		System.out.println("Thread ended");
 		
