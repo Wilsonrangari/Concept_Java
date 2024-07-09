@@ -2,6 +2,7 @@ package com.wilson.comparable_comparator;
 
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class CompraratorDemo {
@@ -28,8 +29,13 @@ public class CompraratorDemo {
 //				Collections.sort(nameList, (cust1, cust2) -> cust1.getCustomerName().compareTo(cust2.getCustomerName()));
 //				System.out.println("Sorting based on customer name "+nameList);
 				
-				Collections.sort(nameList, (cust1, cust2) -> -cust1.getCustomerName().compareTo(cust2.getCustomerName()));
-				System.out.println("Sorting based on customer name using minus sign descending "+nameList);
+//				Collections.sort(nameList, (cust1, cust2) -> -cust1.getCustomerName().compareTo(cust2.getCustomerName()));
+//				System.out.println("Sorting based on customer name using minus sign descending "+nameList);
+				
+				//Java8 style usingmethod reference
+				
+				Comparator<Customer> comparing = Comparator.comparing(Customer::getCustomerName);
+				
 		
 
 	}
